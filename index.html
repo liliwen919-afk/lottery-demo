@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>抽奖演示版</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>🎁 抽奖演示版</h1>
+  <p class="notice">网页演示版：抽奖在浏览器里算、数据只存在本机，仅用于看效果和走流程。正式版抽奖必须放后端云函数，否则可作弊。</p>
+
+  <section class="card" id="drawCard">
+    <h2>抽奖</h2>
+    <ul id="prizeList" class="prizes"></ul>
+    <p class="left">今日剩余次数：<b id="leftCount">-</b>（演示版每天 3 次）</p>
+    <button id="drawBtn" class="btn big">开始抽奖</button>
+    <p id="drawResult" class="result"></p>
+  </section>
+
+  <section class="card hidden" id="addressCard">
+    <h2>🎉 恭喜中奖！请填写邮寄信息</h2>
+    <p>奖品：<b id="winPrize"></b></p>
+    <label>联系人 <input id="fName" placeholder="如：张三"></label>
+    <label>联系电话 <input id="fPhone" placeholder="11 位手机号" inputmode="numeric"></label>
+    <label>邮编 <input id="fZip" placeholder="6 位邮编" inputmode="numeric"></label>
+    <label>邮寄地址 <input id="fAddr" placeholder="省市区 + 详细地址"></label>
+    <p id="formErr" class="err"></p>
+    <button id="submitBtn" class="btn">提交邮寄信息</button>
+  </section>
+
+  <section class="card">
+    <h2>我的奖品</h2>
+    <ul id="myList" class="mylist"></ul>
+    <p class="muted" id="emptyTip">还没有中奖记录，快去抽奖吧。</p>
+  </section>
+
+  <button id="resetBtn" class="linkbtn">重置演示数据（仅演示用）</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

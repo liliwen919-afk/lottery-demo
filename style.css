@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #fdf3ec; color: #333; }
+.wrap { max-width: 520px; margin: 0 auto; padding: 20px 16px 40px; }
+h1 { text-align: center; color: #b34323; margin: 8px 0; }
+h2 { margin: 0 0 12px; font-size: 18px; }
+.notice { background: #fff7e6; border: 1px solid #f5d9a8; border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.6; }
+.card { background: #fff; border-radius: 12px; padding: 16px; margin-top: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.prizes { list-style: none; padding: 0; margin: 0 0 12px; }
+.prizes li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #eee; font-size: 15px; }
+.prizes li:last-child { border-bottom: none; }
+.left { font-size: 14px; }
+.btn { background: #b34323; color: #fff; border: none; border-radius: 8px; padding: 12px 20px; font-size: 16px; cursor: pointer; width: 100%; }
+.btn:disabled { background: #ccc; cursor: default; }
+.btn.big { font-size: 18px; padding: 14px; }
+.result { font-size: 17px; font-weight: bold; text-align: center; min-height: 26px; margin: 14px 0 0; }
+.result.win { color: #b34323; }
+label { display: block; margin: 10px 0; font-size: 14px; }
+label input { display: block; width: 100%; margin-top: 6px; padding: 10px; font-size: 15px; border: 1px solid #ddd; border-radius: 8px; }
+.err { color: #c00; font-size: 13px; min-height: 18px; }
+.mylist { list-style: none; padding: 0; margin: 0; }
+.mylist li { padding: 10px 0; border-bottom: 1px dashed #eee; font-size: 14px; line-height: 1.6; }
+.mylist li:last-child { border-bottom: none; }
+.muted { color: #999; font-size: 13px; }
+.linkbtn { background: none; border: none; color: #999; font-size: 13px; margin-top: 20px; width: 100%; cursor: pointer; text-decoration: underline; }
+.hidden { display: none; }
